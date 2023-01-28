@@ -1,0 +1,105 @@
+@import url(reset.css);
+* {
+    color: grey;
+}
+
+span {
+    color: hotpink;
+}
+
+a {
+    color: lawngreen;
+}
+
+.header-list__link {
+    color: green;
+}
+
+.footer-list__link {
+    color: rebeccapurple;
+}
+
+.footer__copy {
+    color: rgb(2, 2, 37);
+}
+
+#healthy-eating {
+    color: rgb(223, 187, 26);
+}
+
+#overweight,
+#loss,
+#normal {
+    color: rgb(210, 177, 31);
+}
+
+#exchange {
+    color: rgb(161, 14, 14);
+}
+
+p.text {
+    color: rgb(186, 47, 255);
+}
+
+.text.color {
+    color: rgb(127, 24, 237);
+}
+
+.unwanted-list__item-title,
+.balance__list-title {
+    color: red;
+}
+
+.balance-category__list_1 li {
+    color: green;
+}
+
+.balance__list li {
+    color: rgb(240, 240, 10);
+}
+
+.diet-normal__text .text {
+    color: rgb(122, 168, 211);
+}
+
+.exchange .text {
+    color: rgb(46, 46, 240);
+}
+
+.exchange__list * {
+    color: rgb(248, 83, 210);
+}
+
+.diet-indexes__list *,
+.balance-category__list_3 * {
+    color: pink;
+}
+
+.balance-category__list_2>li {
+    color: blue;
+}
+
+.balance__text>p {
+    color: rgb(67, 172, 65);
+}
+
+.healthy-eating__text~p,
+.healthy-eating__text~.test {
+    color: red;
+}
+
+.balance__list+p {
+    color: darkorange;
+}
+
+.exchange__list+p {
+    color: orangered;
+}
+
+[class*="__title"] {
+    color: black;
+}
+
+[class*="__list-title"] {
+    color: black;
+}
