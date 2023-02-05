@@ -117,12 +117,12 @@ h2 {
 }
 
 .gallary-experements__image+.gallary-experements__image {
-    margin: 30px 0;
+    margin-top: 30px;
 }
 
 #third {
     display: block;
-    margin: 0 0 0 auto;
+    margin-left: auto;
 }
 
 .list-experements {
