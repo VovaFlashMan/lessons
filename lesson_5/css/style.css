@@ -1,0 +1,135 @@
+@import url(fonts.css);
+@import url(reset.css);
+body {
+    font-family: "Poppins", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #6C757D;
+    margin: 0 auto;
+}
+
+.header {
+    max-width: 816px;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding: 15px 10px 0;
+}
+
+[class*="__title"] {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.6;
+    color: #212529;
+    margin: 0 0 40px;
+}
+
+h1 {
+    max-width: 400px;
+}
+
+h2 {
+    display: block;
+    margin: 0 auto;
+    max-width: 605px;
+}
+
+[class*="__text"] {
+    max-width: 816px;
+    margin: 0 auto 80px;
+}
+
+.main {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 10px 60px;
+}
+
+.main__image {
+    display: block;
+}
+
+.main__image,
+.main__gallery {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto 80px;
+}
+
+.main__gallery {
+    font-size: 0;
+    max-width: 100%;
+}
+
+.main-gallary__image {
+    max-width: 100%;
+}
+
+.main-gallary__image+.main-gallary__image {
+    margin-left: 30px;
+}
+
+[class*="__text"]>p {
+    margin-bottom: 30px;
+}
+
+.text {
+    margin: 0 auto;
+}
+
+.footer {
+    max-width: 1660px;
+    margin: 0 auto;
+    padding: 0 10px 50px;
+}
+
+.footer-experements {
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.footer-experements__title {
+    max-width: 200px;
+    margin: 0 0 50px auto;
+}
+
+.footer-experements__text {
+    max-height: 700px;
+    overflow-y: scroll;
+}
+
+.gallary-experements {
+    font-size: 0;
+    max-width: 1240px;
+    margin: 0 auto 50px;
+}
+
+.gallary-experements__image {
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+#third {
+    display: block;
+    margin: 0 0 0 auto;
+}
+
+.list-experements {
+    max-width: 500px;
+    padding: 0 10px;
+    margin: 0 auto;
+    font-size: 0;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+.list-experements__item {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 2;
+}
+
+.list-experements__item+.list-experements__item {
+    margin-left: 30px;
+}
