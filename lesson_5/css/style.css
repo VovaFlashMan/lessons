@@ -11,7 +11,7 @@ body {
 .header {
     max-width: 1260px;
     margin: 0 auto;
-    padding: 15px 10px 0;
+    padding: 15px 10px 80px;
 }
 
 [class*="__title"] {
@@ -38,11 +38,9 @@ h1 {
 }
 
 .header__image {
-    display: block;
-    margin-bottom: 80px;
+    max-width: 100%;
 }
 
-.header__image,
 .main__gallery {
     max-width: 100%;
     margin: 0 auto 80px;
