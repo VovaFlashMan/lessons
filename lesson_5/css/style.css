@@ -42,13 +42,9 @@ h1 {
 }
 
 .main__gallery {
-    max-width: 100%;
-    margin: 0 auto 80px;
-}
-
-.main__gallery {
     font-size: 0;
     max-width: 100%;
+    margin: 0 auto 80px;
 }
 
 .main-gallary__image {
