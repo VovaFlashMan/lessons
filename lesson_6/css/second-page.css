@@ -1,0 +1,45 @@
+.header {
+    padding: 100px 0;
+}
+
+.header__image {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.header__container>[class*="__text"] {
+    margin-bottom: 0;
+}
+
+.main__gallery {
+    margin-bottom: 30px;
+}
+
+.bullets-list {
+    max-width: 65px;
+    font-size: 0;
+    margin: 0 auto;
+}
+
+.bullets-list__item {
+    display: inline-flex;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid #C4C4C4;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.bullets-list__item_2 {
+    background-color: #000;
+    border: none;
+}
+
+.main {
+    padding-bottom: 65px;
+}
+
+.footer {
+    padding-bottom: 100px;
+}

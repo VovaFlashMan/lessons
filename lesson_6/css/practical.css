@@ -1,0 +1,126 @@
+.header {
+    padding: 50px 0;
+}
+
+.header__title {
+    text-align: center;
+    letter-spacing: 1.7px;
+    text-shadow: 4px 4px 10px rgba(100, 53, 53, 0.541);
+    font-size: 55px;
+}
+
+.header__text {
+    padding: 20px;
+    border: 3px solid #a5a3a3;
+    border-radius: 20px;
+    box-shadow: 4px 4px 15px rgba(100, 53, 53, 0.434);
+}
+
+h3 {
+    text-align: center;
+}
+
+.header-text_inset {
+    border: 3px dashed #a5a3a3;
+    box-shadow: inset 4px 4px 15px rgba(100, 53, 53, 0.434);
+}
+
+.header-text_outline {
+    outline: 3px solid #a5a3a3;
+    border: none;
+}
+
+.header-text_interesting {
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.151);
+}
+
+.main {
+    padding-bottom: 50px;
+}
+
+.main h2 {
+    max-width: 170px;
+    margin-left: auto;
+    text-align: right;
+    text-shadow: 4px 4px 10px rgba(127, 250, 4, 0.541);
+}
+
+.main__gallery {
+    margin-bottom: 40px;
+}
+
+.main-gallery__box {
+    display: inline-block;
+    max-width: 50%;
+    overflow: hidden;
+    box-shadow: 4px 4px 20px 10px #000;
+}
+
+.main-gallery__image {
+    border-radius: 0;
+}
+
+.main-gallery__box_1 {
+    border-radius: 51% 49% 49% 51% / 47% 49% 51% 53%;
+    border-top: 10px solid #000;
+}
+
+.main-gallery__box_2 {
+    border-radius: 51% 49% 49% 51% / 47% 49% 51% 53%;
+    border-bottom: 10px solid rgba(40, 203, 18, 0.786);
+}
+
+.main-gallery__box_3 {
+    margin-bottom: 30px;
+}
+
+.main-gallery__box_4 {
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.main-gallery__box_5 {
+    display: block;
+    margin-left: auto;
+    max-width: 48%;
+}
+
+.main-gallery__box_6,
+.main-gallery__box_8 {
+    max-width: 25%;
+}
+
+.main-gallery__box_3 {
+    border-radius: 80% 20% 84% 16% / 100% 1% 99% 0%;
+}
+
+.main-gallery__box_4 {
+    border-radius: 0% 100% 0% 100% / 0% 97% 3% 100%;
+}
+
+.main-gallery__box_5 {
+    border-radius: 25% 0% 100% 0% / 100% 0% 100% 0%;
+}
+
+.main-gallery__box_6 {
+    border-radius: 0% 100% 100% 0% / 47% 49% 51% 53%;
+    box-shadow: -15px 6px 7px 4px #fc0303;
+}
+
+.main-gallery__box_7 {
+    border-radius: 51% 49% 49% 51% / 47% 49% 51% 53%;
+    box-shadow: 6px -17px 0px 10px #fc0303;
+}
+
+.main-gallery__box_8 {
+    border-radius: 100% 0% 0% 100% / 48% 49% 51% 52%;
+    box-shadow: 4px 18px 13px 17px #fc0303;
+}
+
+.main-gallery {
+    opacity: 0.7;
+}
+
+.main-gallery_1 {
+    opacity: 0.4;
+}

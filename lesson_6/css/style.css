@@ -1,0 +1,92 @@
+@import url("fonts.css");
+@import url("reset.css");
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #6C757D;
+}
+
+.header {
+    padding: 80px 0;
+}
+
+[class*="__container"] {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+[class*="__title"] {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.6;
+    color: #212529;
+    margin-bottom: 40px;
+}
+
+[class*="__text"] {
+    max-width: 816px;
+    margin: 0 auto 80px;
+}
+
+[class*="__text"]>p {
+    margin-bottom: 15px;
+}
+
+.header__image {
+    max-width: 100%;
+}
+
+.main-text__title {
+    max-width: 605px;
+}
+
+.main__gallery {
+    font-size: 0;
+}
+
+.main-gallery__image {
+    font-size: 14px;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.main-gallery__image_1 {
+    margin-right: 30px;
+}
+
+.footer {
+    padding-bottom: 80px;
+}
+
+.footer__text {
+    margin-bottom: 40px;
+}
+
+.footer-list {
+    max-width: 657px;
+    font-size: 0;
+    white-space: nowrap;
+    overflow-x: scroll;
+    margin: 0 auto;
+}
+
+.footer-list__item {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.footer-list__link {
+    font-size: 30px;
+    font-weight: 500;
+    color: #212529;
+    line-height: 2;
+    text-shadow: 5px 5px 10px rgb(0 0 0 / 37%), -3px -3px 10px rgb(9 218 124 / 77%);
+    transition: text-shadow, 0.3s 0s;
+}
+
+.footer-list__link:hover {
+    text-shadow: 5px 5px 10px rgb(0 0 0 / 37%), -3px -3px 20px rgba(227, 12, 12, 0.77);
+}
