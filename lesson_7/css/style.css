@@ -107,7 +107,7 @@ header {
     font-weight: 600;
     line-height: 1.5;
     padding: 145px 0 146px;
-    background: url("../img/speaker.png") 75% no-repeat, linear-gradient(290deg, rgba(244, 247, 255, 0) 0%, rgba(48, 86, 211, 0.08) 30%, rgba(244, 247, 255, 0) 30%), linear-gradient(290deg, rgba(48, 86, 211, 0) 0%, rgba(48, 86, 211, 0.08) 37%, rgba(244, 247, 255, 0) 37%) #F4F7FF;
+    background: url("../img/speaker.png") 75% no-repeat, linear-gradient(295deg, rgba(244, 247, 255, 0) 0%, rgba(48, 86, 211, 0.08) 30%, rgba(244, 247, 255, 0) 30%), linear-gradient(295deg, rgba(48, 86, 211, 0) 0%, rgba(48, 86, 211, 0.08) 37%, rgba(244, 247, 255, 0) 37%) #F4F7FF;
     min-height: 560px;
 }
 
