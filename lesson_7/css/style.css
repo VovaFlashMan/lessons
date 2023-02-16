@@ -27,6 +27,11 @@ header {
     font-size: 25px;
     line-height: 1.6;
     color: #F8F9FA;
+    max-width: 670px;
+}
+
+.header__subtitle {
+    max-width: 410px;
 }
 
 [class*="__container_small"] {
@@ -119,11 +124,13 @@ header {
     line-height: 1.25;
     color: #212B36;
     margin-bottom: 15px;
+    max-width: 580px;
 }
 
 .main-speaker__text {
     font-weight: 500;
     margin-bottom: 35px;
+    max-width: 570px;
 }
 
 .main-speaker__button {
