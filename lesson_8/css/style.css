@@ -188,11 +188,11 @@
     .main-speaker__image {
         display: inline-block;
         vertical-align: top;
-        padding-top: 80px;
+        padding: 80px 0;
     }
 
     .speaker-image__inner {
-        padding-left: 80%;
+        padding-left: 65%;
     }
 
     .footer {
