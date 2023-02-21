@@ -367,6 +367,7 @@
     .footer-content__list {
         margin-bottom: 50px;
         counter-reset: item;
+        padding-left: 40px;
     }
 
     .footer-content__list li::before {
