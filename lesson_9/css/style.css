@@ -1,0 +1,234 @@
+@import url("fonts.css");
+@import url("reset.css");
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #637381;
+}
+
+span {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2E2E2E;
+}
+
+[class*="__container"] {
+    max-width: 1270px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+[class*="__title"] {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 1.5;
+    color: #2E2E2E;
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+    padding: 80px 0;
+    background-color: #F4F7FF;
+}
+
+.header__container>*:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.header__title {
+    text-align: center;
+    font-size: 72px;
+    line-height: 0.8;
+    cursor: pointer;
+}
+
+.header__title::after {
+    content: "";
+    display: inline-block;
+    width: 70%;
+    height: 3px;
+    background-color: #2E2E2E;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+.header__title:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.header__text>p:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.header__images {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.header__images img {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 30px 50px;
+}
+
+.main {
+    padding: 80px 0;
+    background-color: rgba(36, 45, 45, 0.3);
+}
+
+.main__container>*:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.main-list__title {
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.main__list li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.main-list {
+    font-weight: 500;
+    counter-reset: item;
+    padding-left: 46px;
+}
+
+.main-list__item {
+    min-height: 40px;
+}
+
+.main-list__item::before {
+    counter-increment: item;
+    content: counter(item);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    color: #fff;
+    background-color: blue;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: -46px;
+    margin-right: 26px;
+}
+
+.main-list__link {
+    font-size: 20px;
+    line-height: 1.9;
+    transition: all 0.8s;
+}
+
+.main-list__link::after {
+    content: "";
+    display: block;
+    width: 5%;
+    height: 3px;
+    background-color: blue;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s;
+}
+
+.main-list__link:hover {
+    color: #2E2E2E;
+    text-shadow: 4px 4px 10px rgba(35, 22, 217, 0.7);
+}
+
+.main-list__link:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.main__content>*:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.main-content__text p:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.main-content__list {
+    font-weight: 500;
+}
+
+.main-content__list li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.main-content__image {
+    max-width: 100%;
+}
+
+.main-content__images {
+    font-size: 0;
+}
+
+.main-content__images img {
+    font-size: 14px;
+    display: inline-block;
+    padding: 20px 30px;
+}
+
+.main-content__images_2 {
+    padding: 30px 20px;
+    border: 1px solid #ececec;
+    border-radius: 20px;
+}
+
+.main-content__images_3 img {
+    border-radius: 15px;
+    padding: 0;
+}
+
+.main-content__images_3 img:not(:last-child) {
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.footer {
+    padding: 80px 0;
+    background-color: #F4F7FF;
+}
+
+.footer__container>*:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.footer__title {
+    text-align: center;
+}
+
+.footer__subtitle {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.footer__image {
+    display: block;
+    font-size: 14px;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+.footer__experement::after {
+    content: "";
+    display: inline-block;
+    background: url("../img/icons/blue-dotted.webp") -100px 25px / cover no-repeat;
+    width: 134px;
+    height: 106px;
+}
+
+.footer__experement::before {
+    content: "";
+    display: inline-block;
+    background: url("../img/icons/green-stick.webp") 50px 0 / cover no-repeat;
+    width: 160px;
+    height: 160px;
+}
