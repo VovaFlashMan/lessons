@@ -98,10 +98,6 @@ span {
     padding-left: 46px;
 }
 
-.main-list__item {
-    min-height: 40px;
-}
-
 .main-list__item::before {
     counter-increment: item;
     content: counter(item);
@@ -115,6 +111,11 @@ span {
     text-align: center;
     margin-left: -46px;
     margin-right: 26px;
+    transition: all 0.5s;
+}
+
+.main-list__item:hover::before {
+    transform: scale(1.5);
 }
 
 .main-list__link {
@@ -154,10 +155,32 @@ span {
 
 .main-content__list {
     font-weight: 500;
+    padding-left: 46px;
+}
+
+.main-content__list li::before {
+    content: "";
+    display: inline-block;
+    background: url("../img/icons/green-small-oval.webp") 0 0 / cover no-repeat;
+    width: 18px;
+    height: 15px;
+    margin-left: -46px;
+    margin-right: 28px;
 }
 
 .main-content__list li:not(:last-child) {
     margin-bottom: 20px;
+}
+
+.main-content__list>li>a {
+    font-size: 25px;
+    color: #000;
+    transition: all 0.8s;
+}
+
+.main-content__list>li>a:hover {
+    font-size: 25px;
+    color: #17bd1c;
 }
 
 .main-content__image {
