@@ -219,6 +219,7 @@
             min-height: 300px;
             margin: 0 auto;
             transition: all 1.2s;
+            perspective: 500px;
         }
 
         .zaz__link-title:hover .zaz__title {
@@ -474,5 +475,5 @@
         }
 
         .zaz:hover {
-            transform: scale(1.2);
+            transform: scale(1.12);
         }
