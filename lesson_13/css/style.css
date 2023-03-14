@@ -103,7 +103,7 @@ body {
 
 @keyframes car {
     0% {
-        transform: translateX(0);
+        transform: translateX(-600px);
     }
     100% {
         transform: translateX(400px);
