@@ -1,0 +1,258 @@
+@import url("fonts.css");
+@import url("reset.css");
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.67;
+    color: #495057;
+    background-color: #F8F9FA;
+}
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper>main {
+    flex-grow: 1;
+}
+
+[class*="__container"] {
+    max-width: 1270px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 100px 0 45px 0;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    font-weight: 500;
+    line-height: 2.08;
+}
+
+.filter__categories .filter__link {
+    padding-right: 16px;
+}
+
+.filter__categories .filter__link::before {
+    content: "+";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 9px;
+    height: 25px;
+}
+
+.filter__link {
+    position: relative;
+    display: inline-block;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.filter__link::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #495057;
+    transition: width 0.5s;
+}
+
+.filter__link:hover::after {
+    width: 100%;
+}
+
+.filter__link_active {
+    opacity: 1;
+}
+
+.filter__items {
+    display: flex;
+    column-gap: 20px;
+}
+
+.main {
+    padding-bottom: 60px;
+}
+
+.gallery {
+    display: flex;
+    row-gap: 45px;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.gallery__item {
+    min-width: 320px;
+    flex: 0 1 33.333%;
+    padding: 0 15px;
+}
+
+.gallery__column {
+    max-width: 393px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.gallery__column>*:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.gallery__link {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: inline-block;
+    padding: 2px 12px;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 2.5;
+    color: #F8F9FA;
+    text-transform: uppercase;
+    background-color: rgba(33, 37, 41, 0.3);
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.gallery__link:hover {
+    background-color: rgba(33, 37, 41, 0.7);
+}
+
+.gallery__column .gallery__image-link {
+    display: inline-block;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.gallery__image-link>img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.gallery__image-link:hover>img {
+    transform: scale(1.1);
+}
+
+.gallery__title-link {
+    flex: 1 1 auto;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.6;
+    color: #212529;
+    transition: all 0.4s;
+    min-height: 100%;
+}
+
+.gallery__title-link:hover {
+    color: #fff;
+    text-shadow: 3px 3px 7px rgba(33, 37, 41, 0.7);
+}
+
+.gallery__text {
+    flex-grow: 1;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.footer {
+    padding-bottom: 100px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__button {
+    display: inline-block;
+    padding: 8px 50px;
+    font-weight: 500;
+    line-height: 2.08;
+    color: #F8F9FA;
+    background-color: #212529;
+    border-radius: 3px;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer__button::before {
+    content: "More Articles";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F8F9FA;
+    color: #212529;
+    border: 2px solid #212529;
+    border-radius: 3px;
+    padding: 8px 0;
+    text-align: center;
+    transform: translateX(-110%);
+    transition: all 0.5s;
+}
+
+.footer__button:hover::before {
+    transform: translateX(0);
+}
+
+.practical {
+    background-color: #ececec;
+    padding: 100px 0;
+}
+
+.practical__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 45px;
+    margin: 0 -15px;
+}
+
+.practical__item {
+    flex: 0 1 33.333%;
+    padding: 0 15px;
+}
+
+.practical__column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    min-height: 100%;
+}
+
+.practical__link-image {
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.practical__link-title {
+    font-weight: 700;
+    font-size: 25px;
+    flex-grow: 1;
+}
+
+.practical__text {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #000;
+    flex-grow: 1;
+    justify-self: flex-start;
+}
