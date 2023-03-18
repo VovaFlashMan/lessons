@@ -164,6 +164,15 @@ body {
     border-bottom: 1px solid #E5E5E5;
 }
 
+.gallery__autor {
+    transition: transform 0.3s;
+}
+
+.gallery__autor:hover {
+    transform: scale(1.03) translateX(7px);
+    text-decoration: underline;
+}
+
 .footer {
     padding-bottom: 100px;
 }
