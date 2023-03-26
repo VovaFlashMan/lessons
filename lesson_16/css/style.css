@@ -258,7 +258,7 @@ body {
     column-gap: 15px;
 }
 
-.login-form__inputs>div:not(:last-child) {
+.login-form__inputs>.login-form__line:not(:last-child) {
     margin-bottom: 24px;
 }
 
