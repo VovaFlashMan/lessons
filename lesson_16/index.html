@@ -22,7 +22,7 @@
             <div class="forms__container">
                 <div class="forms__checkout checkout">
                     <h2 class="checkout__title">Billing Details</h2>
-                    <form class="checkout__form" method="GET" enctype="multipart/form-data" action="#">
+                    <form class="checkout__form" method="post" action="https://jsonplaceholder.typicode.com/posts">
                         <div class="checkout__main-part">
                             <div class="checkout__column">
                                 <input class="checkout__input input" required autocomplete="off" placeholder="First name*" name="first-name" type="text" tabindex="01">
@@ -76,15 +76,15 @@
                         <div class="login-form__inputs">
                             <div class="login-form__line">
                                 <label class="login-form__label" for="mail-01">Email Address<span>*</span></label>
-                                <input required class="login-form__input" placeholder="roni_cost@example.com" name="mail" id="mail-01" autocomplete="off" type="email">
+                                <input required class="login-form__input" placeholder="roni_cost@example.com" name="mail" id="mail-01" minlength="5" autocomplete="off" type="email">
                             </div>
                             <div class="login-form__line">
                                 <label class="login-form__label" for="password-01">Password</label>
-                                <input class="login-form__input" placeholder="******************" name="password" id="password-01" autocomplete="off" type="password">
+                                <input class="login-form__input" placeholder="******************" name="password" id="password-01" minlength="8" autocomplete="off" type="password">
                             </div>
                             <div class="login-form__line login-form__line_last">
                                 <label class="login-form__label" for="postcode-03">Zip/Postal Code</label>
-                                <input class="login-form__input" name="password" id="postcode-03" autocomplete="off" type="text">
+                                <input class="login-form__input" minlength="5" maxlength="10" name="postcode-03" id="postcode-03" autocomplete="off" type="text">
                             </div>
                         </div>
                         <p class="login-form__text">You already have an account with us. Sign in or continue as guest.</p>
@@ -96,11 +96,11 @@
                     <form class="shipping__form-main main-form" method="GET" enctype="multipart/form-data" action="#">
                         <div class="main-form__line">
                             <label class="main-form__label" for="name-01">First Name<span>*</span></label>
-                            <input class="main-form__input" required name="first-name" id="name-01" autocomplete="off" type="text">
+                            <input class="main-form__input" minlength="2" required name="first-name" id="name-01" autocomplete="off" type="text">
                         </div>
                         <div class="main-form__line">
                             <label class="main-form__label" for="name-02">Last Name<span>*</span></label>
-                            <input class="main-form__input" required name="last-name" id="name-02" autocomplete="off" type="text">
+                            <input class="main-form__input" minlength="2" required name="last-name" id="name-02" autocomplete="off" type="text">
                         </div>
                         <div class="main-form__line">
                             <label class="main-form__label" for="name-02">Company</label>
@@ -110,14 +110,14 @@
                             <label class="main-form__label" for="adress-01">Street Address<span>*</span>
                             </label>
                             <div class="main-form__adress-inputs">
-                                <input class="main-form__input" required name="adress-01" id="adress-01" autocomplete="off" type="text">
-                                <input class="main-form__input" required name="adress-02" autocomplete="off" type="text">
-                                <input class="main-form__input" required name="adress-03" autocomplete="off" type="text">
+                                <input class="main-form__input" minlength="2" required name="adress-01" id="adress-01" autocomplete="off" type="text">
+                                <input class="main-form__input" name="adress-02" autocomplete="off" type="text">
+                                <input class="main-form__input" name="adress-03" autocomplete="off" type="text">
                             </div>
                         </div>
                         <div class="main-form__line">
                             <label class="main-form__label" for="country-02">Country<span>*</span></label>
-                            <input class="main-form__input" required name="country" id="country-02" autocomplete="off" type="text">
+                            <input class="main-form__input" minlength="3" required name="country" id="country-02" autocomplete="off" type="text">
 
                         </div>
                         <div class="main-form__line">
