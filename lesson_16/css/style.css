@@ -85,10 +85,6 @@ body {
     border-radius: 7px;
 }
 
-.coupon__input {
-    padding: 13px 25px;
-}
-
 .input:focus,
 .checkout__select:focus,
 .checkout__textarea:focus {
@@ -197,9 +193,15 @@ body {
 }
 
 .coupon__actions {
-    display: inline-flex;
+    display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 20px;
+}
+
+.coupon__input {
+    flex: 0 1 39.5%;
+    padding: 13px 25px;
 }
 
 .coupon__button {
@@ -388,6 +390,7 @@ body {
     width: 73.1%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     column-gap: 20px;
 }
 
@@ -412,6 +415,7 @@ body {
     cursor: pointer;
     font-size: 14px;
     line-height: 1.43;
+    font-weight: 500;
 }
 
 .radio__label::before {
@@ -428,7 +432,6 @@ body {
 
 .radio__input:checked+.radio__label {
     color: #000000;
-    font-weight: 500;
 }
 
 .advantages {
