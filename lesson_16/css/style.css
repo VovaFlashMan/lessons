@@ -85,6 +85,15 @@ body {
     border-radius: 7px;
 }
 
+.input::placeholder,
+.checkout__textarea::placeholder {
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #637381;
+}
+
 .input:focus,
 .checkout__select:focus,
 .checkout__textarea:focus {
