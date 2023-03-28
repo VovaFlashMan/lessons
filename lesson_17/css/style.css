@@ -442,13 +442,15 @@
     .gallery>.gallery__box-item:not(:last-child) {
         margin-bottom: 10px;
     }
+    .gallery {
+        margin: 0;
+    }
 }
 
 @media (min-width:620.98px) {
     .gallery {
         display: flex;
         flex-wrap: wrap;
-        margin: 0;
     }
 }
 
