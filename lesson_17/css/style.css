@@ -198,6 +198,12 @@
     position: relative;
 }
 
+@media (max-width:479.98px) {
+    .item-achivments__link-title {
+        font-size: 20px;
+    }
+}
+
 @media (any-hover: hover) {
     .item-achivments__link-title:hover {
         color: #9C9C9C;
