@@ -895,6 +895,12 @@
     border-bottom: 1px solid #C4C4C4;
 }
 
+@media(max-width:549.98px) {
+    .login-form {
+        padding-bottom: 20px;
+    }
+}
+
 .login-form__line,
 .main-form__line {
     display: flex;
@@ -1017,6 +1023,12 @@
 
 .main-form {
     padding-top: 39px;
+}
+
+@media(max-width:549.98px) {
+    .main-form {
+        padding-top: 24px;
+    }
 }
 
 .main-form__line {
