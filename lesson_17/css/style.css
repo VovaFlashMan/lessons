@@ -821,7 +821,7 @@
     }
 }
 
-@media (max-width:479.98px) {
+@media (max-width:609.98px) {
     .coupon__input {
         flex: 0 1 100%;
     }
@@ -836,7 +836,7 @@
     transition: background-color 0.3s;
 }
 
-@media (max-width:479.98px) {
+@media (max-width:609.98px) {
     .coupon__button {
         width: 100%;
     }
@@ -857,7 +857,7 @@
     transition: background-color 0.3s;
 }
 
-@media (max-width:479.98px) {
+@media (max-width:609.98px) {
     .checkout__button {
         width: 100%;
     }
