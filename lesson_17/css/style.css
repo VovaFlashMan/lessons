@@ -122,11 +122,16 @@
 }
 
 .item-achivments__box-image {
-    flex: 0 1 62.17%;
     overflow: hidden;
 }
 
-@media (max-width:991.98px) {
+@media (min-width:1006.98px) {
+    .item-achivments__box-image {
+        flex: 0 1 62.17%;
+    }
+}
+
+@media (max-width:1006.98px) {
     .item-achivments__box-image {
         margin-bottom: 20px;
     }
@@ -160,10 +165,12 @@
     }
 }
 
-.item-achivments__info {
-    flex: 0 0 37.83%;
-    padding-left: 120px;
-    align-self: center;
+@media (min-width:1006.98px) {
+    .item-achivments__info {
+        flex: 0 0 37.83%;
+        padding-left: 120px;
+        align-self: center;
+    }
 }
 
 @media (max-width:1220px) {
@@ -467,9 +474,14 @@
     }
 }
 
-.gallery__box-item {
-    flex: 0 0 50%;
-    padding: 0 16px;
+@media (min-width:620.98px) {
+    .gallery__box-item {
+        flex: 0 0 50%;
+        padding: 0 16px;
+    }
+    .gallery__box-item_big {
+        flex: 0 0 100%;
+    }
 }
 
 @media (max-width:991.98px) {
@@ -487,7 +499,6 @@
 @media (max-width:620px) {
     .gallery__box-item {
         padding: 0;
-        flex: 0 0 100%;
     }
 }
 
@@ -504,10 +515,6 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
-
-.gallery__box-item_big {
-    flex: 0 0 100%;
 }
 
 .gallery__box-item_big>.gallery__item {
@@ -582,7 +589,7 @@
     row-gap: 30px;
 }
 
-@media (max-width:549.98px) {
+@media (max-width:609.98px) {
     .checkout__column {
         flex: 0 1 100%;
         row-gap: 10px;
@@ -601,7 +608,7 @@
     line-height: 1.5;
 }
 
-@media (max-width:549.98px) {
+@media (max-width:609.98px) {
     .input,
     .checkout__select,
     .checkout__textarea {
@@ -648,7 +655,7 @@
     pointer-events: none;
 }
 
-@media (max-width: 628.98px) {
+@media (max-width: 609.98px) {
     .checkout__box-select::after {
         top: 18px;
     }
@@ -691,7 +698,7 @@
     margin-bottom: 35px;
 }
 
-@media (max-width:549.98px) {
+@media (max-width:609.98px) {
     .checkout__textarea {
         padding: 20px;
         height: 150px;
@@ -743,7 +750,7 @@
     color: #637381;
 }
 
-@media (max-width:549.98px) {
+@media (max-width:479.98px) {
     .checkbox__label {
         font-size: 14px;
     }
@@ -814,7 +821,7 @@
     }
 }
 
-@media (max-width:401.98px) {
+@media (max-width:479.98px) {
     .coupon__input {
         flex: 0 1 100%;
     }
@@ -829,7 +836,7 @@
     transition: background-color 0.3s;
 }
 
-@media (max-width:401.98px) {
+@media (max-width:479.98px) {
     .coupon__button {
         width: 100%;
     }
@@ -850,7 +857,7 @@
     transition: background-color 0.3s;
 }
 
-@media (max-width:401.98px) {
+@media (max-width:479.98px) {
     .checkout__button {
         width: 100%;
     }
