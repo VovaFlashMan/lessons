@@ -9,20 +9,22 @@
         display: flex;
         flex-wrap: wrap;
     }
-    .gallery__categoies {
-        align-items: center;
-    }
-}
-
-@media (min-width:619.98px) {
-    .gallery__items {
-        margin: 0 -15px;
-        display: flex;
-        flex-wrap: wrap;
+    @media (min-width:619.98px) {
+        .gallery__items {
+            margin: 0 -15px;
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 }
 
 @media (max-width:768px) {
+    .gallery__title {
+        margin-bottom: 30px;
+    }
+    .gallery__categoies {
+        justify-content: center;
+    }
     .gallery__title {
         margin-bottom: 30px;
     }
