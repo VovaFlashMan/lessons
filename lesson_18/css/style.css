@@ -655,6 +655,8 @@ body {
     min-height: 25px;
     font-weight: 600;
     font-size: 14px;
+    border: 1px solid #E5E5E5;
+    border-radius: 3px;
 }
 
 @media (max-width:479.98px) {
