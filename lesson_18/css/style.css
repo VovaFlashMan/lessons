@@ -69,8 +69,11 @@ body {
     color: #DDBEA9;
 }
 
-.header__navigation {
-    flex: 0 1 auto;
+@media (min-width:767.98px) {
+    .header__navigation {
+        flex: 0 1 auto;
+        padding-left: 85px;
+    }
 }
 
 .menu__link_active::after {
