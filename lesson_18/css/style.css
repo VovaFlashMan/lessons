@@ -1,5 +1,12 @@
 @import url("fonts.css");
 @import url("reset.css");
+a:focus-visible,
+.gallery__button:focus-visible {
+    outline: 2px solid #DDBEA9;
+    border-radius: 4px;
+    opacity: 1;
+}
+
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -142,7 +149,8 @@ body {
         .categories__link:hover,
         .card__info>a:hover,
         .card__info>a:hover,
-        .second-page-social:focus-visible {
+        .second-page-social:focus-visible,
+        .gallery__button:focus-visible {
             opacity: 1;
         }
     }
@@ -226,7 +234,8 @@ body {
     z-index: 3;
 }
 
-.actions__link:focus-visible,
+
+/* .actions__link:focus-visible,
 .menu__link:focus-visible,
 .pagination__link:focus-visible,
 .categories__link:focus-visible,
@@ -235,9 +244,10 @@ body {
     outline: 2px solid #DDBEA9;
     border-radius: 4px;
     opacity: 1;
-}
+} */
 
-.card__link-image:focus-visible>img {
+.card__link-image:focus-visible>img,
+.item-gallery__link:focus-visible>img {
     transform: scale(1.05);
 }
 
@@ -503,6 +513,7 @@ body {
 
 .slider__title {
     text-align: center;
+    padding: 0 5px;
 }
 
 .slider__numbers {
@@ -855,9 +866,6 @@ body {
 
 .pagination__link:focus {
     position: relative;
-    outline: 2px solid #DDBEA9;
-    border-radius: 4px;
-    opacity: 1;
 }
 
 .pagination__link_activce::after {
@@ -982,7 +990,7 @@ body {
 .second-page-social {
     color: #495057;
     opacity: 0.5;
-    transition: all 0.3s;
+    transition: color 0.3s opacity 0.3s;
 }
 
 @media (any-hover: hover) {
