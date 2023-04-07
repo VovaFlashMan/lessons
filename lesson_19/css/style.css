@@ -269,8 +269,14 @@
         @media(min-width:795.98px) {
             .products-latest__items {
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(368px, 1fr));
+                grid-template-columns: repeat(2, 1fr);
                 gap: 30px;
+            }
+        }
+
+        @media(min-width:1050px) {
+            .products-latest__items {
+                grid-template-columns: repeat(3, 1fr);
             }
         }
 
@@ -494,8 +500,8 @@
             }
         }
 
-        @media (min-width:649.98px) {
-            .products-traending__items {
+        @media (min-width:579.98px) {
+            .products-trending__items {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 border: 0.5px solid #e7e7e7;
@@ -504,8 +510,8 @@
             }
         }
 
-        @media (min-width:809.98px) {
-            .products-traending__items {
+        @media (min-width:991.98px) {
+            .products-trending__items {
                 grid-template-columns: repeat(3, 1fr);
             }
         }
@@ -515,7 +521,7 @@
             border: 0.5px solid #e7e7e7;
         }
 
-        @media (max-width:650px) {
+        @media (max-width:580px) {
             .item-trending {
                 border-radius: 10px;
             }
