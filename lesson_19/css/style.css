@@ -137,16 +137,14 @@
 
             .header__card {
                 position: relative;
-                display: block;
-                overflow: hidden;
-                padding-bottom: 14.7%;
                 cursor: pointer;
                 transition: box-shadow 0.3s;
+                min-height: 230px;
             }
 
             .header__card:first-child {
                 grid-row: span 2;
-                padding-bottom: 60%;
+                min-height: 490px;
             }
 
             @media (any-hover: hover) {
