@@ -122,19 +122,6 @@
                 gap: 30px;
             }
 
-            @media (max-width:1100px) {
-                .header__container {
-                    gap: 15px;
-                }
-            }
-
-            @media (max-width:840px) {
-                .header__container {
-                    grid-template-columns: 1fr;
-                    gap: 10px;
-                }
-            }
-
             .header__card {
                 position: relative;
                 cursor: pointer;
@@ -145,6 +132,59 @@
             .header__card:first-child {
                 grid-row: span 2;
                 min-height: 490px;
+            }
+
+            .header__link-category {
+                display: inline-block;
+                color: #212B36;
+                position: relative;
+                padding-left: 40px;
+                padding-top: 40px;
+                margin-bottom: 12px;
+            }
+
+            .header__title-category {
+                padding-left: 40px;
+                max-width: 362px;
+            }
+
+            @media (max-width:1100px) {
+                .header__container {
+                    grid-template-columns: 1fr;
+                    gap: 15px;
+                }
+                .header__card:first-child {
+                    min-height: 70vw;
+                }
+                .header__card {
+                    min-height: 40vw;
+                }
+            }
+
+            @media (max-width:479.98px) {
+                .header__title-category {
+                    padding-left: 20px;
+                    max-width: 262px;
+                }
+                .header__link-category {
+                    padding-left: 20px;
+                    padding-top: 20px;
+                }
+                .header__card:first-child {
+                    min-height: 360px;
+                }
+                .header__card {
+                    min-height: 190px;
+                }
+            }
+
+            @media (max-width:414.98px) {
+                .header__card:first-child {
+                    min-height: 300px;
+                }
+                .header__card {
+                    min-height: 160px;
+                }
             }
 
             @media (any-hover: hover) {
@@ -166,7 +206,6 @@
                 position: relative;
                 display: block;
                 overflow: hidden;
-                width: 100%;
             }
 
             .image>img {
@@ -185,20 +224,6 @@
                 }
             }
 
-            .header__link-category {
-                display: inline-block;
-                color: #212B36;
-                position: relative;
-                padding-left: 40px;
-                padding-top: 40px;
-                margin-bottom: 12px;
-            }
-
-            .header__title-category {
-                padding-left: 40px;
-                max-width: 362px;
-            }
-
             .header__link-category,
             .header__link-title {
                 transition: color 0.4s;
@@ -213,21 +238,8 @@
                 max-width: 372px;
             }
 
-            @media(max-width:1100px) {
-                .header__link-title {
-                    font-size: 22px;
-                }
-            }
-
-            @media (max-width:840px) {
-                .header__link-title {
-                    font-size: 28px;
-                }
-            }
-
             @media (max-width:550px) {
                 .header__link-title {
-                    max-width: 230px;
                     font-size: 18px;
                 }
             }
@@ -352,15 +364,12 @@
             }
 
             .products-latest__item {
-                border: 1px solid #e7e7e7;
-                border-radius: 8px;
-            }
-
-            .products-latest__item {
                 display: flex;
                 flex-direction: column;
                 min-height: 100%;
                 overflow: hidden;
+                border: 1px solid #e7e7e7;
+                border-radius: 7px;
             }
 
             .products-latest__image {
