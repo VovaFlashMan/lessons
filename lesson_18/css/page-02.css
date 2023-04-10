@@ -1,0 +1,126 @@
+@media (min-width:619.98px) {
+    .gallery__items {
+        margin: 0 -15px;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+}
+
+@media (min-width:767.98px) {
+    .gallery__top {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 20px;
+    }
+    .gallery__items {
+        row-gap: 40px;
+    }
+}
+
+@media (max-width:768px) {
+    .gallery__title {
+        margin-bottom: 30px;
+    }
+    .gallery__categoies {
+        justify-content: center;
+    }
+    .gallery__title {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:467.98px) {
+    .gallery__title {
+        margin-bottom: 20px;
+    }
+    .header__socials {
+        column-gap: 20px;
+    }
+}
+
+.gallery__title {
+    max-width: 393px;
+}
+
+.gallery__categoies {
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 25px;
+    row-gap: 5px;
+}
+
+.gallery__button {
+    color: #495057;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+@media (any-hover: hover) {
+    .gallery__button:hover {
+        opacity: 1;
+    }
+}
+
+.gallery__button_active {
+    opacity: 1;
+}
+
+.item-gallery__link {
+    overflow: hidden;
+    border-radius: 3px;
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    padding-bottom: 63.613232%;
+}
+
+@media (max-width:620px) {
+    .gallery__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:991.98px) {
+    .item-gallery__link {
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width:619.98px) {
+    .item-gallery {
+        flex: 0 1 50%;
+        padding: 0 15px;
+    }
+}
+
+@media (min-width:991.98px) {
+    .item-gallery {
+        flex: 0 1 33.33%;
+        padding: 0 15px;
+    }
+}
+
+@media (any-hover: hover) {
+    .item-gallery__link:hover>img {
+        transform: scale(1.04);
+    }
+}
+
+.item-gallery__date {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.67;
+    color: #495057;
+    margin-bottom: 15px;
+}
+
+.item-gallery__title-link>a {
+    transition: color 0.3s;
+}
+
+.item-gallery__title-link>a:hover {
+    color: #DDBEA9;
+}
