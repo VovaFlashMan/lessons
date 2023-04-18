@@ -19,8 +19,10 @@
   <main class="page">
     <div class="page__container">
 <div class="page__main main">
-<div class="main__brands brands">
-  <h3 class="brands__title">chose your brand</h3>
+<fieldset class="main__brands brands">
+<legend class="brands__legend">
+    <h3 class="brands__title">chose your brand</h3>
+  </legend>
 <div class="brands__items">
   <a class="brands__item" href="#">
     <img src="img/brands/01.svg" alt="brand chanel">
@@ -44,36 +46,36 @@
     <img src="img/brands/07.svg" alt="brand armani">
   </a>
 </div>
-</div>
+</fieldset>
 <div class="main__cards cards">
-  <a href="#" class="cards__item item-card">
+  <a href="#" class="cards__item item-card item-card_right">
 <div class="item-card__image">
         <img src="img/cards/image_01.webp" alt="See our clothing collections">
 </div>
 <div class="item-card__content">
   <h2 class="item-card__title">choosе your look</h2>
   <div class="item-card__subtitle">See our clothing collections</div>
-  <div class="item-card__link">see offers</div>
+  <div class="item-card__link link-button">see offers</div>
 </div>
   </a>
-    <a href="#" class="cards__item item-card">
+    <a href="#" class="cards__item item-card item-card_big">
 <div class="item-card__image">
         <img src="img/cards/image_02.webp" alt="See our clothing collections">
 </div>
 <div class="item-card__content">
   <h2 class="item-card__title">Up to 40% off</h2>
   <div class="item-card__subtitle">Special offers and great deals</div>
-  <div class="item-card__link">shop now</div>
+  <div class="item-card__link link-button">shop now</div>
 </div>
   </a>
-    <a href="#" class="cards__item item-card">
+    <a href="#" class="cards__item item-card item-card_left">
 <div class="item-card__image">
         <img src="img/cards/imgae_03.webp" alt="See our clothing collections">
 </div>
 <div class="item-card__content">
   <h2 class="item-card__title">brand new style</h2>
   <div class="item-card__subtitle">Popular clothing brands</div>
-  <div class="item-card__link">see offers</div>
+  <div class="item-card__link link-button">see offers</div>
 </div>
   </a>
 </div>
@@ -110,7 +112,7 @@
   <div class="shop__gallery gallery-shop">
 <div class="gallery-shop__inner">
       <div class="gallery-shop__items">
-        <div class="gallery-shop__item item-gallery">
+        <div class="gallery-shop__item  item-gallery">
           <a class="item-gallery__image" href="#">
             <img src="img/shop-wear/01.webp" alt="Angels malu zip jeans slim black used">
           </a>
@@ -144,6 +146,7 @@
           <a class="item-gallery__image" href="#">
             <img src="img/shop-wear/04.webp" alt="Angels malu zip jeans slim black used">
           </a>
+            <span class="item-gallery__discount">-30%</span>
             <a class="item-gallery__link" href="#">TOP women</a>
             <h5 class="item-gallery__title-link">
               <a  class="item-gallery__link-title" href="#">Angels malu zip jeans slim black used Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt fugit et corporis quibusdam dolorem nesciunt molestias dignissimos, rerum voluptates.</a>
@@ -167,6 +170,7 @@
           <a class="item-gallery__image" href="#">
             <img src="img/shop-wear/04.webp" alt="Angels malu zip jeans slim black used">
           </a>
+          <span class="item-gallery__discount">-30%</span>
             <a class="item-gallery__link" href="#">TOP women</a>
             <h5 class="item-gallery__title-link">
               <a  class="item-gallery__link-title" href="#">Angels malu zip jeans slim black used Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt fugit et corporis quibusdam dolorem nesciunt molestias dignissimos, rerum voluptates.</a>
@@ -198,6 +202,178 @@
         </div>
       </div>
       <button class="gallery-shop__button">Load more</button>
+</div>
+  </div>
+</div>
+<div class="main__shoping shoping">
+  <picture>
+  <source media="(min-width: 768px)" srcset="img/shoping-bg.jpg">
+  <source media="(min-width: 320px)" srcset="img/shoping-bg_small.jpg">
+  <img class="shoping__background-image" src="img/shoping-bg.jpg" alt="Chris standing up holding his daughter Elva">
+</picture>
+  <div class="shoping__content">
+    <h2 class="shoping__title title">shoping without limits.</h2>
+    <div class="shoping__text text">
+      <p>Choose the best option for you, and it does not matter whether you are.</p>
+    </div>
+    <a class="shoping__link link-button" href="#">shop now</a>
+  </div>
+</div>
+<div class="main__featured featured">
+<div class="featured__top top">
+  <h4 class="featured__title title-small">Featured Items</h4>
+  <div class="featured__buttons buttons">
+    <div class="featured__button button">
+      <img src="img/icons/arrow.svg" alt="arrow icon">
+    </div>
+     <div class="featured__button button">
+          <img src="img/icons/arrow.svg" alt="arrow icon">
+     </div>
+  </div>
+</div>
+<div class="featured__slider slider">
+   <div class="slider__item item-gallery">
+          <a class="item-gallery__image" href="#">
+            <img src="img/featured/01.jpg" alt="Angels malu zip jeans slim black used">
+          </a>
+            <a class="item-gallery__link" href="#">TOP women</a>
+            <h5 class="item-gallery__title-link">
+              <a  class="item-gallery__link-title" href="#">Angels malu zip jeans slim black used.</a>
+            </h5>
+            <div class="item-gallery__price">139,00 EUR</div>
+        </div>
+          <div class="slider__item item-gallery">
+          <a class="item-gallery__image" href="#">
+            <img src="img/featured/02.jpg" alt="Angels malu zip jeans slim black used">
+          </a>
+            <a class="item-gallery__link" href="#">TOP women</a>
+            <h5 class="item-gallery__title-link">
+              <a  class="item-gallery__link-title" href="#">Angels malu zip jeans slim black used</a>
+            </h5>
+            <div class="item-gallery__price">139,00 EUR</div>
+        </div>
+          <div class="slider__item item-gallery">
+          <a class="item-gallery__image" href="#">
+            <img src="img/featured/03.jpg" alt="Angels malu zip jeans slim black used">
+          </a>
+            <a class="item-gallery__link" href="#">TOP women</a>
+            <h5 class="item-gallery__title-link">
+              <a  class="item-gallery__link-title" href="#">Angels malu zip jeans slim black used</a>
+            </h5>
+            <div class="item-gallery__price">139,00 EUR</div>
+        </div>
+          <div class="slider__item item-gallery">
+          <a class="item-gallery__image" href="#">
+            <img src="img/featured/04.jpg" alt="Angels malu zip jeans slim black used">
+          </a>
+            <a class="item-gallery__link" href="#">TOP women</a>
+            <h5 class="item-gallery__title-link">
+              <a  class="item-gallery__link-title" href="#">Angels malu zip jeans slim black used</a>
+            </h5>
+            <div class="item-gallery__price">139,00 EUR</div>
+        </div>
+          <div class="slider__item item-gallery">
+          <a class="item-gallery__image" href="#">
+            <img src="img/featured/05.jpg" alt="Angels malu zip jeans slim black used">
+          </a>
+         <span class="item-gallery__discount">-30%</span>
+            <a class="item-gallery__link" href="#">TOP women</a>
+            <h5 class="item-gallery__title-link">
+              <a  class="item-gallery__link-title" href="#">Angels malu zip jeans slim black used Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt fugit et corporis quibusdam dolorem nesciunt molestias dignissimos, rerum voluptates.</a>
+            </h5>
+          <div class="item-gallery__prices">
+            <div class="item-gallery__price">139,00 EUR</div>
+            <div class="item-gallery__old-price">119,00 EUR</div>
+          </div>
+        </div>
+</div>
+</div>
+<div class="main__popular popular">
+<div class="popular__top top">
+  <h4 class="popular__title title-small">Most Popular</h4>
+  <div class="popular__buttons buttons">
+    <div class="popular__button button">
+      <img src="img/icons/arrow.svg" alt="arrow icon">
+    </div>
+     <div class="popular__button button">
+          <img src="img/icons/arrow.svg" alt="arrow icon">
+     </div>
+  </div>
+</div>
+<div class="popular__slider slider">
+   <div class="slider__item item-gallery">
+          <a class="item-gallery__image" href="#">
+            <img src="img/featured/01.jpg" alt="Angels malu zip jeans slim black used">
+          </a>
+            <a class="item-gallery__link" href="#">TOP women</a>
+            <h5 class="item-gallery__title-link">
+              <a  class="item-gallery__link-title" href="#">Angels malu zip jeans slim black used.</a>
+            </h5>
+            <div class="item-gallery__price">139,00 EUR</div>
+        </div>
+          <div class="slider__item item-gallery">
+          <a class="item-gallery__image" href="#">
+            <img src="img/featured/02.jpg" alt="Angels malu zip jeans slim black used">
+          </a>
+            <a class="item-gallery__link" href="#">TOP women</a>
+            <h5 class="item-gallery__title-link">
+              <a  class="item-gallery__link-title" href="#">Angels malu zip jeans slim black used</a>
+            </h5>
+            <div class="item-gallery__price">139,00 EUR</div>
+        </div>
+          <div class="slider__item item-gallery">
+          <a class="item-gallery__image" href="#">
+            <img src="img/featured/03.jpg" alt="Angels malu zip jeans slim black used">
+          </a>
+            <a class="item-gallery__link" href="#">TOP women</a>
+            <h5 class="item-gallery__title-link">
+              <a  class="item-gallery__link-title" href="#">Angels malu zip jeans slim black used</a>
+            </h5>
+            <div class="item-gallery__price">139,00 EUR</div>
+        </div>
+          <div class="slider__item item-gallery">
+          <a class="item-gallery__image" href="#">
+            <img src="img/featured/04.jpg" alt="Angels malu zip jeans slim black used">
+          </a>
+            <a class="item-gallery__link" href="#">TOP women</a>
+            <h5 class="item-gallery__title-link">
+              <a  class="item-gallery__link-title" href="#">Angels malu zip jeans slim black used</a>
+            </h5>
+            <div class="item-gallery__price">139,00 EUR</div>
+        </div>
+          <div class="slider__item item-gallery">
+          <a class="item-gallery__image" href="#">
+            <img src="img/featured/05.jpg" alt="Angels malu zip jeans slim black used">
+          </a>
+         <span class="item-gallery__discount">-30%</span>
+            <a class="item-gallery__link" href="#">TOP women</a>
+            <h5 class="item-gallery__title-link">
+              <a  class="item-gallery__link-title" href="#">Angels malu zip jeans slim black used Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt fugit et corporis quibusdam dolorem nesciunt molestias dignissimos, rerum voluptates.</a>
+            </h5>
+          <div class="item-gallery__prices">
+            <div class="item-gallery__price">139,00 EUR</div>
+            <div class="item-gallery__old-price">119,00 EUR</div>
+          </div>
+        </div>
+</div>
+</div>
+<div class="main__explore explore">
+  <div class="explore__inner">
+  <div class="explore__image">
+    <picture>
+  <source media="(min-width: 768px)" srcset="img/explore-bg.jpg">
+  <source media="(min-width: 320px)" srcset="img/explore-bg_small.jpg">
+  <img src="img/explore-bg.jpg" alt="Chris standing up holding his daughter Elva">
+</picture>
+    </div>
+<div class="explore__box-content">
+        <div class="explore__content">
+      <h2 class="explore__title title">EXPLORE THE BEST OF YOU.</h2>
+      <div class="explore__text text">
+        <p>You can choose the best option for you, and it does not matter whether you are in Prague or San Francisco.</p>
+      </div>
+      <a class="explore__link link-button" href="#">shop now</a>
+    </div>
 </div>
   </div>
 </div>
