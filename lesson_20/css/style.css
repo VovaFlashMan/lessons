@@ -572,7 +572,6 @@ body {
   }
 }
 .item-card_big .item-card__title {
-  max-width: 357px;
   font-size: 96px;
   line-height: 1.11;
   color: #131313;
@@ -580,24 +579,55 @@ body {
 @media (max-width: 1550px) {
   .item-card_big .item-card__title {
     font-size: 65px;
-    max-width: 297px;
   }
 }
 @media (max-width: 1220px) {
   .item-card_big .item-card__title {
     font-size: 56px;
-    max-width: 220px;
   }
 }
 @media (max-width: 991.98px) {
   .item-card_big .item-card__title {
     font-size: 46px;
-    max-width: 190px;
   }
 }
 @media (max-width: 450.98px) {
   .item-card_big .item-card__title {
     font-size: 26px;
+  }
+}
+@media (max-width: 1369.98px) {
+  .item-card .item-card__content {
+    max-width: 271px;
+  }
+}
+@media (max-width: 991.98px) {
+  .item-card .item-card__content {
+    max-width: 191px;
+  }
+}
+@media (max-width: 450.98px) {
+  .item-card .item-card__content {
+    max-width: 120px;
+  }
+}
+@media (max-width: 1550px) {
+  .item-card_big .item-card__content {
+    max-width: 297px;
+  }
+}
+@media (max-width: 1220px) {
+  .item-card_big .item-card__content {
+    max-width: 220px;
+  }
+}
+@media (max-width: 991.98px) {
+  .item-card_big .item-card__content {
+    max-width: 190px;
+  }
+}
+@media (max-width: 450.98px) {
+  .item-card_big .item-card__content {
     max-width: 100px;
   }
 }
@@ -624,6 +654,8 @@ body {
 }
 .item-card__content {
   position: relative;
+  padding: 10px 0;
+  max-width: 357px;
 }
 .item-card__title {
   font-family: "Oswald", sans-serif;
@@ -643,7 +675,7 @@ body {
     font-size: 26px;
   }
 }
-@media (max-width: 479.98px) {
+@media (max-width: 450.98px) {
   .item-card__title {
     font-size: 16px;
     margin-bottom: 3px;
