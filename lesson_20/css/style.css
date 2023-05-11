@@ -53,7 +53,7 @@ button {
 }
 
 .wrapper {
-  overflow: hidden;
+  overflow: clip;
   min-height: 100%;
   position: relative;
   display: -webkit-box;
@@ -749,7 +749,9 @@ body {
 }
 @media (min-width: 1083px) {
   .shop__caterories {
-    min-width: 415px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 36%;
+            flex: 0 1 36%;
   }
 }
 .shop__title {
@@ -805,6 +807,8 @@ body {
 }
 .form-shop__label::before {
   content: "";
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   width: 10px;
   height: 10px;
   border: 1px solid #828282;
