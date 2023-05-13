@@ -1,0 +1,231 @@
+@use "sass:math";
+@import "_mixins.scss";
+@import "_fonts.scss";
+@import "_reset.scss";
+@import "_common.scss";
+@import "_header.scss";
+@import "_footer.scss";
+
+
+
+.slider {
+  position: relative;
+  color: $whitecolor;
+      &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color:$mainblack;
+        }
+  &__background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0.6;
+  }
+
+  &__container {}
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    row-gap: rem(15);
+    min-height: rem(600);
+    padding-bottom: rem(100);
+    @media (max-width: 47.998em){
+          min-height: rem(450);
+            padding-bottom: rem(50);
+    }
+            @media (max-width: 29.98em) {
+              min-height: rem(380);
+              padding-bottom: rem(30);
+            }
+  }
+
+  &__data {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__title {
+    max-width: rem(605);
+    transition: color 0.3s;
+    @media (any-hover: hover){
+      &:hover{
+        color: $hovercolor;
+      }
+    }
+            @media (max-width: 47.998em) {
+              font-size: rem(20);
+            }
+  }
+
+  &__link-title {
+      position: relative;
+        z-index: 2;
+  }
+
+  &__text {
+      position: relative;
+        z-index: 2;
+          max-width: rem(400);
+  }
+}
+
+
+.page {
+
+  &__articels {
+    padding: rem(100) rem(0);
+      @media (max-width: 61.998em) {
+          padding: rem(50) rem(0);
+        }
+    @media (max-width: 47.998em) {
+        padding: rem(30) rem(0);
+      }
+  }
+}
+
+.articels {
+
+  &__container {
+
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: rem(20);
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(rem(350),1fr));
+    column-gap: rem(30);
+    row-gap: rem(45);
+    @media (max-width: 74.998em) {
+                  grid-template-columns: repeat(auto-fill, minmax(rem(280), 1fr));
+                      column-gap: rem(20);
+                        row-gap: rem(35);
+      }
+
+        @media (max-width: 47.998em) {
+  column-gap: rem(15);
+    row-gap: rem(20);
+        }
+    &:not(:last-child){
+      margin-bottom: rem(60);
+        @media (max-width: 61.998em) {
+          margin-bottom: rem(40);
+          }
+
+          @media (max-width: 47.998em) {
+         margin-bottom: rem(20);
+          }
+    }
+  }
+
+  &__item {}
+
+     &__link {
+      font-weight: 500;
+      display: block;
+      max-width: rem(178);
+      text-align: center;
+      margin: 0 auto;
+      padding: rem(8) rem(0);
+      border-radius: rem(3);
+      background-color: $mainblack;
+      color: $whitecolor;
+      transition: all 0.3s;
+      @media (any-hover: hover){
+        &:hover{
+          background-color: $hovercolor;
+          color: $mainblack;
+        }
+      }
+     }
+}
+
+.actions {
+font-weight: 500;
+&:not(:last-child) {
+    margin-bottom: rem(44);
+      @media (max-width: 61.998em) {
+          margin-bottom: rem(30);
+        }
+
+        @media (max-width: 47.998em) {
+          margin-bottom: rem(20);
+        }
+  }
+  &__categories {
+      line-height: math.div(25, 12);
+        color: $articelsblack;
+        position: relative;
+        display: inline-flex;
+        column-gap: rem(7);
+        &::after{
+          content: "+";
+        }
+
+  }
+
+  &__columns {
+
+  }
+
+     &__categories,
+     &__column{
+  &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: rem(1);
+      border-radius: rem(2);
+      background-color: $articelsblack;
+      transition: all 0.3s;
+    }
+
+    @media (any-hover: hover) {
+      &:hover {
+        &::before {
+          left: 0;
+          width: 100%;
+        }
+      }
+    }
+     }
+
+  &__column {
+    position: relative;
+  color:rgba(73, 80, 87, 0.5);
+  line-height: math.div(25, 12);
+  &:not(:last-child){
+    margin-right: rem(20);
+  }
+    &_active {
+  color: $articelsblack;
+    }
+  }
+
+
+}
+
+
+
+
+
+
+

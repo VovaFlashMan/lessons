@@ -1,0 +1,149 @@
+$whitecolor: #F8F9FA;
+$hovercolor: #DDBEA9;
+$mainblack: #212529;
+$articelsblack: #495057;
+body{
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: rem(12);
+  line-height: math.div(25 ,12 );
+}
+
+[class*="__container"] {
+  max-width: rem(1270);
+  margin: 0 auto;
+  padding: 0 rem(15);
+}
+.logo{
+    font-weight: 700;
+    font-size: rem(18);
+    line-height: math.div(25, 18);
+    &::after {
+      content: ".";
+      color: $hovercolor;
+    }
+}
+
+.title{
+  font-size: rem(25);
+  line-height: math.div(40 ,25 );
+  font-weight: 700;
+}
+.item-article {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  &>*:not(:last-child){
+    margin-bottom: rem(15);
+      @media (max-width: 47.998em) {
+          margin-bottom: rem(10);
+        }
+  }
+&__top{
+position: relative;
+&:not(:last-child){
+  margin-bottom: rem(30);
+        @media (max-width: 47.998em) {
+          margin-bottom: rem(20);
+        }
+}
+}
+  &__link {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: rem(3);
+    padding-bottom: 63.6%;
+    @media (any-hover: hover){
+      &:hover{
+        & img{
+          transform: scale(1.03);
+        }
+      }
+    }
+    & img{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s;
+    }
+  }
+
+  &__category {
+    font-size: rem(8);
+    line-height: math.div(20 ,8 );
+  color: $whitecolor;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  padding: rem(3) rem(12);
+  border-radius: rem(3);
+  background-color: rgba(33, 37, 41, 0.3);
+  position: absolute;
+  top: 12%;
+  right: 7.5%;
+  transition: all 0.3s;
+  @media (any-hover: hover){
+    &:hover{
+      background-color: $hovercolor;
+      color: $mainblack;
+    }
+  }
+             @media (max-width: 47.998em) {
+              padding: rem(2) rem(8);
+             }
+  }
+
+  &__title-link {}
+
+  &__link-title{
+      transition: color 0.3s;
+      @media (any-hover: hover){
+        &:hover{
+          color: $hovercolor;
+        }
+      }
+                @media  (min-width: 56.875em) and (max-width:74.998em ){
+                  font-size: rem(20);
+                }
+                                            @media (max-width: 47.998em) {
+                                                          font-size: rem(20);
+                                            }
+     }
+
+  &__text {
+    flex-grow: 1;
+    padding-bottom: rem(15);
+    border-bottom: rem(1) solid #e5e5e5;
+      @media (max-width: 47.998em) {
+        padding-bottom: rem(10);
+        }
+  }
+
+  &__autor-link {
+    position: relative;
+align-self: flex-start;
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: rem(1);
+        border-radius: rem(2);
+        background-color: $articelsblack;
+        transition: all 0.3s;
+      }
+
+      @media (any-hover: hover) {
+        &:hover {
+          &::before {
+            left: 0;
+            width: 100%;
+          }
+        }
+      }
+
+  }
+}
