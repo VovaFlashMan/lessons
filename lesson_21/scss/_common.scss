@@ -29,6 +29,10 @@ body{
   line-height: math.div(40 ,25 );
   font-weight: 700;
 }
+time{
+  line-height: math.div(20 ,12 );
+  color: $articelsblack;
+}
 .item-article {
   display: flex;
   flex-direction: column;
@@ -114,12 +118,15 @@ position: relative;
 
   &__text {
     flex-grow: 1;
-    padding-bottom: rem(15);
-    border-bottom: rem(1) solid #e5e5e5;
       @media (max-width: 47.998em) {
         padding-bottom: rem(10);
         }
+                        &_border-top{
+  padding-bottom: rem(15);
+    border-bottom: rem(1) solid #e5e5e5;
+                        }
   }
+
 
   &__autor-link {
     position: relative;
